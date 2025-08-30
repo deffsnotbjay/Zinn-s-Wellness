@@ -552,6 +552,10 @@ select {
         font-size: 35px;
     }
 
+    .services-section h3 {
+        font-size: 16px;
+    }
+
     .services-grid {
         gap: 30px;
     }
