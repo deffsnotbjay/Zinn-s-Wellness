@@ -546,6 +546,16 @@ select {
     transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+    .services-section h2 {
+        font-size: 32px;
+    }
+
+    .services-grid {
+        gap: 30px;
+    }
+}
+
 
 .spa {
     position: relative;
