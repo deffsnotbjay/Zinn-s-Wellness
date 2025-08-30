@@ -454,6 +454,7 @@ select {
 
 .services-section h2 {
     font-size: 40px;
+    font-family: "Dancing Script", cursive;
     font-weight: 500;
     color: #01311f;
     margin-bottom: 60px;
@@ -548,7 +549,7 @@ select {
 
 @media (max-width: 768px) {
     .services-section h2 {
-        font-size: 32px;
+        font-size: 35px;
     }
 
     .services-grid {
