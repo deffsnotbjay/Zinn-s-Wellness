@@ -669,12 +669,11 @@ select {
 
 .discover-btn {
     background-color: #01311f;
-    font-family: "inter", sans-serif;
+    font-family: "montagu slab", serif;
     color: #ddb41f;
     border: none;
     border-radius: 4px;
     padding: 15px 30px;
-    font-weight: bold;
     cursor: pointer;
     margin-top: 20px;
 }
@@ -2129,5 +2128,6 @@ footer{
     }
 
 } */
+
 
 
