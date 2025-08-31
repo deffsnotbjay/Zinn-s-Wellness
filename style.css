@@ -948,6 +948,9 @@ select {
         left: -130px;
 
     }
+    .text-content h4 {
+      font-size: 14px;
+    }
     .text-content {
         padding-right: 0;
         text-align: center;
@@ -2126,4 +2129,5 @@ footer{
     }
 
 } */
+
 
