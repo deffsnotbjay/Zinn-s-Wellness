@@ -1,314 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zinn's - Wellness</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zinn's Wellness - Natural Spa & Wellness Center</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-
     <nav class="navbar" id="navbar">
-        <div class="logo"> Zinn's</div>
-
-        <div class="hamburger-menu" id="hamburgerMenu">
-        <span></span>
-        <span></span>
-        <span></span>
-        </div>
-
-        <ul class="menu" id="desktopmenu">
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="service.html">SERVICE</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-
-        <div class="icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-
-        <div class="mobile-menu-content" id="mobileMenuContent">
-        <ul class="navbar-links-mobile">
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="service.html">SERVICE</a></li>
-            <li><a href="about.html">CONTACT</a></li>
-        </ul>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Zinn's Wellness</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn-nav">Book An Appointment Now <i data-lucide="arrow-down-right" style="vertical-align: middle;"></i></a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
     </nav>
 
-
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h3>Welcome to</h3>
-      <h1>Where Beauty Meets Serenity</h1>
-      <a href="" class="b">Book Now</a>
-      <a href="" class="btn">Explore More</a>
-      
-    </div>
-  </section>
-
-  <section class="services-section reveal">
-    <h3>What We Do</h3>
-    <div class="divider">
-        <img src="pics/vecteezy_gold-calligraphic-page-dividers_59693061.png" alt="">
-    </div>
-    <h2>Professional Spa and Beauty Service</h2>
-
-    <div class="services-grid">
-      
-      <div class="service-box">
-        <div class="icon-circle" style="background-image: url(pics/african-girl-woman-couch-lady-beautician.jpg);">
-          
-        </div>
-        <h4>Facial's</h4>
-        <p>At our beauty spa salon, we offer a wide range of services tailored to meet.</p>
+    <header class="hero" role="banner">
+      <div class="video-wrap" id="videoWrap">
+        <video id="heroVideo" class="hero-video" autoplay muted playsinline preload="auto" poster="videos/spa-poster.jpg">
+          <source src="pics/banner-one.mp4" type="video/mp4" />
+        </video>
       </div>
 
-      
-      <div class="service-box">
-        <div class="icon-circle" style="background-image: url(pics/liana-s-90_x7K7oUqo-unsplash.jpg);">
-        </div>
-        <h4>Aroma Therapy</h4>
-        <p>We also offer private rooms for more intimate treatments and couples.</p>
+      <div class="hero-content" id="heroContent">
+        <div class="tagline">Reinvigorate You Today</div>
+        <h1>Experience Zinn's Beauty &amp; Wellness</h1>
+        <a class="cta" href="contact.html">Book Now</a>
       </div>
+    </header>
 
-      
-      <div class="service-box">
-        <div class="icon-circle" style="background-image: url(pics/beautiful-african-woman-smiling-enjoying-massage-with-closed-eyes-spa-salon.jpg);">
-        </div>
-        <h4>Massage</h4>
-        <p>Relax in our serene lounge area, sip on herbal teas, and immerse yourself.</p>
-      </div>
-
-      
-      <div class="service-box">
-        <div class="icon-circle" style="background-image: url(pics/close-up-manicurist-using-nail-polish.jpg);">
-        </div>
-        <h4>Nail Manicure</h4>
-        <p>Relax in our serene lounge area, sip on herbal teas, and immerse yourself.</p>
-      </div>
-    </div>
-
-    <div class="carousel-indicators">
-      <span></span>
-      <span></span>
-      <span class="active"></span>
-      <span></span>
-      <span></span>
-    </div>
-  </section>
-
-  <section class="spa reveal">
-    <div class="spa-content">
-        <div class="left-column">
-                <img src="pics/attractive-african-woman-having-massage-relaxing-spa-salon-closed-eyes.jpg" alt="Woman getting a massage" class="main-image">
-                <img src="pics/rosa-rafael-Pe9IXUuC6QU-unsplash.jpg" alt="Woman smiling" class="overlay-image">
-        </div>
-
-        <div class="right-column">
-                <div class="about-us">
-                    <span>About Us</span>
-                    <span class="decorative-line"></span>
+    <section class="services-section reveal">
+        <div class="container">
+            <div class="service-header">
+                <h2>Our Signature Services</h2>
+                <p>Discover our best natural wellness treatments</p>
+            </div>
+        
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="blob"></div>
+                        <img src="pics/facial-massage.png" alt="Body Therapy Icon">
+                    </div>
+                    <h3>Facials</h3>
+                    <p>Rejuvenate your skin with deep cleansing, hydration, and a radiant glow</p>
+                    <a href="service.html">→</a>
                 </div>
-                <h1>Discover The <span class="highlight">Ultimate</span><br>Spa Massage Experience</h1>
-                <p>Discover a world of tranquility, luxury, and personalized care as you embark on a journey of self-care and renewal. Visit us today and let us transport you to a realm of beauty and serenity.</p>
-                
-                <div class="buttons-container">
-                    <button class="program-btn">
-                        <span class="icon">&#x269B;</span>Personal Program
-                    </button>
-                    <button class="program-btn">
-                        <span class="icon">&#x269B;</span>Expert Nutritionist
-                    </button>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="blob"></div>
+                        <img src="pics/body-massage.png" alt="Body Therapy Icon">
+                    </div>
+                    <h3>Massage</h3>
+                    <p>Restore balance and relieve stress through expert therapeutic techniques.</p>
+                    <a href="service.html">→</a>
                 </div>
-                
-                <p class="secondary-text">We also offer private rooms for more intimate treatments and couples' packages for a romantic escape.</p>
-                
-                <button class="discover-btn">DISCOVER MORE</button>
-        </div>
-    </div>
-  </section>
 
-    <section class="choose reveal">
-        <div class="text-content">
-            <h4>Why Choose Us</h4>
-            <h1>We Have <span style="color: #01311f;">25 Years</span> Of Experience With Nail Style.</h1>
-            <p>
-            We prioritize the cleanliness and comfort of our clients, ensuring a hygienic and relaxing environment
-            throughout your visit. Our salon adheres to strict sanitization protocols, and all our tools.
-            </p>
-
-            <div class="feature">
-            <img src="pics/manicure.png" alt="nail-icon"/>
-            <div class="feature-text">
-                <h3>Skin & Beauty Benefits</h3>
-                <p>Facials, scrubs, and body wraps detoxify, exfoliate, and hydrate your skin — leaving you glowing and refreshed.</p>
-            </div>
-            </div>
-
-            <div class="feature">
-            <img src="pics/guarantee.png" alt="best-place-icon"/>
-            <div class="feature-text">
-                <h3>Self-Care & Confidence</h3>
-                <p>Taking time for yourself isn't selfish — it’s essential. Spa visits promote confidence, self-love, and body positivity</p>
-            </div>
-            </div>
-
-            <div class="feature">
-            <img src="pics/property.png" alt="best-place-icon"/>
-            <div class="feature-text">
-                <h3>Premium Treatment</h3>
-                <p>That's why we only use premium quality nail polishes, gel, and other nail products from trusted brands.</p>
-            </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="blob"></div>
+                        <img src="pics/pedicure.png" alt="Body Therapy Icon">
+                    </div>
+                    <h3>Pedicure</h3>
+                    <p>Relax your body and relieve stress with our professional therapy sessions.</p>
+                    <a href="service.html">→</a>
+                </div>
             </div>
         </div>
+    </section>
 
+    <section class="about-section">
+        <!-- LEFT SECTION - IMAGE AREA -->
         <div class="image-container">
-            <img src="pics/top-view-spa-decoration-with-little-bottle.jpg" alt="nail-girl" />
-            
+            <div class="main-image-wrapper">
+                <img src="pics/about-image.png" alt="Spa massage treatment">
+            </div>
         </div>
-    </section>
 
-    <section class="price reveal">
-        <div class="price-image"></div>
+        <!-- RIGHT SECTION - CONTENT AREA -->
+        <div class="content-container">
+            <div class="welcome-header">
+                <div class="about-label">
+                    <!-- <span class="lotus-icon">🪷</span> -->
+                    <span>About</span>
+                </div>
 
-        <div class="price-overlay">
-            <div class="price-text">
-                <h2>Our Treatments & Prices</h2>
-                <ul>
-                <li><span>Massage</span><strong><i class="fa-solid fa-naira-sign" style="color: #b99a49;"></i> 20,000</strong></li>
-                <li><span>Skin Polishing</span><strong><i class="fa-solid fa-naira-sign" style="color: #b99a49;"></i> 18,000</strong></li>
-                <li><span>Skin Exfoliation</span><strong><i class="fa-solid fa-naira-sign" style="color: #b99a49;"></i> 12,000</strong></li>
-                <li><span>Manicure</span><strong><i class="fa-solid fa-naira-sign" style="color: #b99a49;"></i> 10,000</strong></li>
-                <li><span>Pedicure</span><strong><i class="fa-solid fa-naira-sign" style="color: #b99a49;"></i> 15,000</strong></li>
-                </ul>
-                <div class="price-button-container">
-                    <a href="#" class="price-button">VIEW FULL PRICE LIST</a>
+                <h1 class="about-title">Welcome To Zinn's Beauty & Wellness</h1>
+
+                <p class="about-description">
+                    Zinn’s Wellness Spa offers calming treatments, curated for balance and renewal. Our retreat blends nature and serenity,
+                    giving guests a space to breathe deeply and restore inner stillness.Skilled therapists tailor each ritual with intention
+                    and care. Feel tension fade, clarity return and well-being rise gently from within.
+                </p>
+            </div>
+
+            <div class="about-services-container">
+                <div class="about-service-card">
+                    <div class="about-service-icon">
+                        <img src="pics/facial-massage.png" alt="">
+                    </div>
+                    <div class="about-service-content">
+                        <h3>Facials</h3>
+                        <p>Restorative facials, gently designed to nourish your complexion, renew tired skin, and reveal a natural glow with soothing care.</p>
+                    </div>
+                </div>
+
+                <div class="about-service-card">
+                    <div class="about-service-icon">
+                        <img src="pics/body-massage.png" alt="">
+                    </div>
+                    <div class="about-service-content">
+                        <h3>Massage Treatments</h3>
+                        <p>Indulgent massage therapies designed to melt stress, ease deep tension and restore comfort through soothing touch and mindful relaxation.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section class="spa-gallery reveal">
+
+
+
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="price-header">
+                <h2>Our Flexible Pricing</h2>
+                <p>Transparent pricing for your wellness journey</p>
+            </div>
+
+            <div class="pricing-tabs">
+                <div class="tab">
+                    <div class="price-icon">
+                        <div class="blob"></div>
+                        <img src="pics/facial-massage.png" alt="Body Therapy Icon">
+                    </div>
+                    <div class="tab-label">Facials</div>
+                </div>
+            
+                <div class="tab">
+                    <div class="price-icon">
+                        <div class="blob"></div>
+                        <img src="pics/body-massage.png" alt="Body Therapy Icon">
+                    </div>
+                    <div class="tab-label">Massage</div>
+                </div>
+
+                <div class="tab">
+                    <div class="price-icon">
+                        <div class="blob"></div>
+                        <img src="pics/pedicure.png" alt="Body Therapy Icon">
+                    </div>
+                    <div class="tab-label">Pedicure</div>
+                </div>
+            </div>
+
+            
+            <div class="pricing-list">
+                <div class="pricing-column">
+                    <div class="pricing-item">
+                    <div class="item-left">
+                        <img class="item-image" src="pics/african-girl-woman-couch-lady-beautician.jpg" alt="Aroma Therapy">
+                        <div class="item-text">
+                            <div class="item-title">Facials</div>
+                            <div class="item-desc">20 mins Revitalize Facial</div>
+                        </div>
+                    </div>
+                    <div class="item-price">from <strong> ₦20,000</strong></div>
+                    </div>
+
+                    <div class="pricing-item">
+                    <div class="item-left">
+                        <img class="item-image" src="pics/about-six-image2.jpg" alt="Sauna">
+                        <div class="item-text">
+                            <div class="item-title">Skin Exfoliation</div>
+                            <div class="item-desc">20 mins Revitalize Facial</div>
+                        </div>
+                    </div>
+                    <div class="item-price">from <strong>₦18,000</strong></div>
+                    </div>
+
+                    <div class="pricing-item">
+                    <div class="item-left">
+                        <img class="item-image" src="pics/beautiful-african-woman-smiling-enjoying-massage-with-closed-eyes-spa-salon.jpg" alt="Geothermal">
+                        <div class="item-text">
+                            <div class="item-title">Skin Polishing</div>
+                            <div class="item-desc">20 mins Revitalize Facial</div>
+                        </div>
+                    </div>
+                    <div class="item-price">from <strong>₦12,000</strong></div>
+                    </div>
+                </div>
+
+                <div class="pricing-column">
+                    <div class="pricing-item">
+                    <div class="item-left">
+                        <img class="item-image" src="pics/simon-humler--AakIaAPV0w-unsplash.jpg" alt="Aroma Therapy">
+                        <div class="item-text">
+                            <div class="item-title">Massage</div>
+                            <div class="item-desc">20 mins Revitalize Facial</div>
+                        </div>
+                    </div>
+                    <div class="item-price">from <strong>₦25,000</strong></div>
+                    </div>
+
+                    <div class="pricing-item">
+                    <div class="item-left">
+                        <img class="item-image" src="pics/close-up-manicurist-using-nail-polish.jpg" alt="Sauna">
+                        <div class="item-text">
+                            <div class="item-title">Manicure</div>
+                            <div class="item-desc">20 mins Revitalize Facial</div>
+                        </div>
+                    </div>
+                    <div class="item-price">from <strong>₦10,000</strong></div>
+                    </div>
+
+                    <div class="pricing-item">
+                    <div class="item-left">
+                        <img class="item-image" src="pics/Cropped image of a young woman getting spa massage treatment and foot reflexology in a beauty salon_ _ Premium Photo.jpg" alt="Geothermal">
+                        <div class="item-text">
+                            <div class="item-title">Pedicure</div>
+                            <div class="item-desc">20 mins Revitalize Facial</div>
+                        </div>
+                    </div>
+                    <div class="item-price">from <strong>₦15,000</strong></div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-now-wrapper">
+                <a href="contact.html" class="book-now-btn">Book Now →</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="faq-section">
+        <div class="faq-image">
+            <img src="pics/faq-image.jpg" alt="">
+            <div class="image-text">
+                <h2>Revive Your <br> Senses</h2>
+            </div>
+        </div>
+
+        <div class="faq-right">
+            <h1>All About Your Spa Day</h1>
+
+            <div class="accordion-item active">
+                <div class="accordion-question">1. What should I wear to the spa?</div>
+                <div class="accordion-answer">
+                    We recommend wearing comfortable clothing to the spa. For treatments like massages or facials, you'll be provided with a robe and slippers. Our therapists are trained to drape you discreetly to ensure your privacy at all times.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-question">2. Do I need to book an appointment in advance?</div>
+                <div class="accordion-answer">
+                    Yes, we highly recommend booking in advance to ensure availability for your preferred time and treatment.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-question">3. What time should I arrive for my appointment?</div>
+                <div class="accordion-answer">
+                    Please arrive at least 15 minutes early to allow time for check-in and relaxation before your treatment begins.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-question">4. Can I request a male or female therapist?</div>
+                <div class="accordion-answer">
+                    Yes, we accommodate requests for male or female therapists whenever possible. Please make this request when booking.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="testimonial-section container">
+        <div class="testimonial-header">
+            <p class="subheading">Testimonial</p>
+            <h2>What Our Clients Say</h2>
+        </div>
+
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="client-image">
+                <img src="pics/Emmanuel.jpg" alt="Robert Fox">
+                </div>
+                <div class="testimonial-content">
+                <h3>Emmanuel Salami</h3>
+                <p class="role">Happy Client</p>
+                <p class="quote">
+                    “ The session was deeply relaxing. I felt the tension leave my body and I slept better than I have in weeks. ”
+                </p>
+                <div class="stars">★★★★★</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="client-image">
+                <img src="pics/testimonial 2 (1).jpeg" alt="Wade Warren">
+                </div>
+                <div class="testimonial-content">
+                <h3>Fatima Adebayo</h3>
+                <p class="role">Happy Client</p>
+                <p class="quote">
+                    “ I felt genuinely cared for during the entire session. My skin and mood both improved instantly — I’m definitely coming back. ”
+                </p>
+                <div class="stars">★★★★★</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="client-image">
+                <img src="pics/testimonial 2 (2).jpeg" alt="Cameron Williamson">
+                </div>
+                <div class="testimonial-content">
+                <h3>Ifunanya Okorie</h3>
+                <p class="role">Happy Client</p>
+                <p class="quote">
+                    “ The experience was so refreshing. I didn’t realize how much stress I was carrying until I felt it melt away. ”
+                </p>
+                <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="video-header">
+            <h2>See Our Wellness Journey</h2>
+            <p>Watch how our clients transform their lives</p>
+        </div>
+        <div class="video-container" id="videoTrigger">
+            <img src="pics/beautiful-african-woman-smiling-enjoying-massage-with-closed-eyes-spa-salon.jpg" alt="Video Thumbnail" class="video-thumbnail">
+            <div class="play-button"></div>
+        </div>
+    </section>
+
+    <!-- VIDEO MODAL -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">✕</button>
+            <video class="modal-video" src="pics/WhatsApp Video 2025-10-21 at 09.07.35_6d260092.mp4" controls allowfullscreen></video>
+        </div>
+    </div>
+
+    <section id="gallery" class="spa-gallery reveal">
         <div class="gallery-title">
             <h2>Relax <span class="highlight">&</span> Rejuvenate</h2>
             <p>Explore our tranquil spa experiences</p>
         </div>
 
         <div class="gallery-grid">
-            <div class="gallery-item big"><img src="pics/attractive-african-woman-having-massage-relaxing-spa-salon-closed-eyes.jpg" alt="Spa 1"></div>
-            <div class="gallery-item"><img src="pics/close-up-manicurist-using-nail-polish.jpg" alt="Spa 2"></div>
-            <div class="gallery-item"><img src="pics/rosa-rafael-Pe9IXUuC6QU-unsplash.jpg" alt="Spa 3"></div>
-            <div class="gallery-item big"><img src="pics/promo massage 1ere expérience corps complet.jpg" alt="Spa 4"></div>
-            <div class="gallery-item"><img src="pics/Cropped image of a young woman getting spa massage treatment and foot reflexology in a beauty salon_ _ Premium Photo.jpg" alt="Spa 5"></div>
-            <div class="gallery-item"><img src="pics/simon-humler--AakIaAPV0w-unsplash.jpg" alt="Spa 6"></div>
-        </div>
-    </section>
-
-    <section class="appointment-section reveal">
-        <div class="form-content">
-            <h3>Make An Appointment</h3>
-            <h1>Relax Anytime Any Day<br>At 20% Discount</h1>
-
-            <form>
-            <div class="form-group">
-                <input type="text" placeholder="First Name" />
-                <i class="fas fa-user"></i>
+            <div class="gallery-item big">
+                <img src="pics/attractive-african-woman-having-massage-relaxing-spa-salon-closed-eyes.jpg" alt="Spa 1">
+                <a href="#">
+                    <div class="gallery-overlay">
+                        <div class="icon">+</div>
+                        <h3>Ruler Massage</h3>
+                        <p>Classic</p>
+                    </div>
+                </a>
             </div>
-            <div class="form-group">
-                <input type="text" placeholder="Last Name" />
-                <i class="fas fa-user"></i>
+            <div class="gallery-item">
+                <img src="pics/close-up-manicurist-using-nail-polish.jpg" alt="Spa 2">
+                <a href="#">
+                    <div class="gallery-overlay">
+                        <div class="icon">+</div>
+                        <h3>Professional Manicure</h3>
+                        <p>Luxury</p>
+                    </div>
+                </a>
             </div>
-            <div class="form-group">
-                <input type="email" placeholder="Email" />
-                <i class="fas fa-envelope"></i>
+            <div class="gallery-item">
+                <img src="pics/rosa-rafael-Pe9IXUuC6QU-unsplash.jpg" alt="Spa 3">
+                <a href="#">
+                    <div class="gallery-overlay">
+                        <div class="icon">+</div>
+                        <h3>Luxury Facial</h3>
+                        <p>Glow Treatment</p>
+                    </div>
+                </a>
             </div>
-            <div class="form-group">
-                <input type="tel" placeholder="Phone" />
-                <i class="fas fa-phone"></i>
+            <div class="gallery-item big">
+                <img src="pics/promo massage 1ere expérience corps complet.jpg" alt="Spa 4">
+                <a href="#">
+                    <div class="gallery-overlay">
+                        <div class="icon">+</div>
+                        <h3>Ruler Massage</h3>
+                        <p>Classic</p>
+                    </div>
+                </a>
             </div>
-            <div class="form-group full">
-                <select>
-                <option selected disabled>Select Subject</option>
-                <option>Massage</option>
-                <option>Facial</option>
-                <option>Manicure</option>
-                </select>
-                <i class="fas fa-chevron-down"></i>
+            <div class="gallery-item">
+                <img src="pics/Cropped image of a young woman getting spa massage treatment and foot reflexology in a beauty salon_ _ Premium Photo.jpg" alt="Spa 5">
+                <a href="#">
+                    <div class="gallery-overlay">
+                        <div class="icon">+</div>
+                        <h3>Foot Spa</h3>
+                        <p>Refreshing Pedicure</p>
+                    </div>
+                </a>
             </div>
-            <div class="form-group">
-                <input type="date" />
-                <i class="fas fa-calendar"></i>
-            </div>
-            <div class="form-group">
-                <input type="time" />
-                <i class="fas fa-clock"></i>
-            </div>
-            <button class="submit-btn">MAKE AN APPOINTMENT</button>
-            </form>
-        </div>
-
-        <div class="image-content">
-            <img src="pics/engin-akyurt-ZbzYDboN7fg-unsplash.jpg" alt="Spa image" />
-            <div class="play-button">
-            <i class="fas fa-play"></i>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonial-cards reveal">
-        <div class="section-header">
-            <span class="subtitle">Testimonials</span>
-            <div class="divider">
-                <img src="pics/vecteezy_gold-calligraphic-page-dividers_59693061.png" alt="">
-            </div>
-            <h2 class="title">Our Customer Feedback</h2>
-        </div>
-
-        <div class="cards">
-            
-            <div class="card">
-            <img class="profile-img" src="https://randomuser.me/api/portraits/women/60.jpg" alt="Customer 1">
-            <p class="text">
-                Intrinsicly pontifice pandemic ships growth strategies and partner convergence lives multidiscipliner business. Proin mollis ultrices.
-            </p>
-            <h3 class="name">Dianne Russell</h3>
-            <span class="role">Customer</span>
-            <img class="flower" src="pics/right.png" alt="flower decoration">
-            <div class="quote-bg">❝</div>
-            </div>
-
-            <div class="card">
-            <img class="profile-img" src="https://randomuser.me/api/portraits/women/65.jpg" alt="Customer 2">
-            <p class="text">
-                Whether you're preparing for a special occasion or simply want to pamper yourself, our talented stylists will work closely with you to create.
-            </p>
-            <h3 class="name">Angelina Margret</h3>
-            <span class="role">Customer</span>
-            <img class="flower" src="pics/right.png" alt="flower decoration">
-            <div class="quote-bg">❝</div>
-            </div>
-
-            <div class="card">
-            <img class="profile-img" src="https://randomuser.me/api/portraits/women/71.jpg" alt="Customer 3">
-            <p class="text">
-                Parallel task user friendly through supply chain. Dynamically simplify reliable meta service visionary sources unleash tactical.
-            </p>
-            <h3 class="name">Senjuti Das</h3>
-            <span class="role">Customer</span>
-            <img class="flower" src="pics/right.png" alt="flower decoration">
-            <div class="quote-bg">❝</div>
+            <div class="gallery-item">
+                <img src="pics/simon-humler--AakIaAPV0w-unsplash.jpg" alt="Spa 6">
+                <a href="#">
+                    <div class="gallery-overlay">
+                        <div class="icon">+</div>
+                        <h3>Deep Massage</h3>
+                        <p>Classic</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
- 
+    
+
+    <section class="stats-section">
+        <div class="stat-box">
+            <div class="stat-number">13k</div>
+            <div class="stat-label">Satisfied Customers</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">10</div>
+            <div class="stat-label">Spa Accessories</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">23</div>
+            <div class="stat-label">Years of Experience</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">10</div>
+            <div class="stat-label">Number of Centers</div>
+        </div>
+    </section>
+
+    <section id="contact" class="booking-section">
+        <div class="booking-content">
+            <h2>Your Journey to Relaxation Begins Here</h2>
+            <a href="contact.html" class="booking-btn">Book Now</a>
+        </div>
+    </section>
+
     <div class="footer-gallery">    
         <img src="pics/african-girl-woman-couch-lady-beautician.jpg" alt="nail2"/>
         <img src="pics/close-up-manicurist-using-nail-polish.jpg" alt="nail3"/>
@@ -325,8 +483,8 @@
                 Where Beauty Meets Serenity
                 </p>
                 <div class="contact-info">
-                <p><span><i class="fa-solid fa-phone-volume fa-flip" style="color: #ddb41f;"></i></span> +234 902 141 3480</p>
-                <p><span><i class="fa-solid fa-envelope-circle-check" style="color: #ddb41f;"></i></span> info@rasm.com</p>
+                <p><span><i class="fa-solid fa-phone" style="color: #ddb41f;"></i></span> +234 902 141 3480</p>
+                <p><span><i class="fa-solid fa-envelope-circle-check" style="color: #ddb41f;"></i></span> zinnswellness@gmail.com</p>
                 </div>
                 <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-facebook" style="color: #ddb41f;"></i></a>
@@ -341,7 +499,6 @@
                 <div class="footer-links">
                 <a href="#">➜ About Us</a>
                 <a href="#">➜ Work Gallery</a>
-                <a href="#">➜ Privacy Policy</a>
                 <a href="#">➜ Our Services</a>
                 <a href="#">➜ Pricing Plans</a>
                 <a href="#">➜ Contact Us</a>
@@ -378,7 +535,6 @@
             <p>&copy; 2025 <span>Zinn's Wellness</span>. All rights reserved.</p>
         </div>
     </footer>
-
-  <script src="zinn.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

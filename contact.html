@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zinn's Wellness - Natural Spa & Wellness Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Zinn's Wellness</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn-nav">Book An Appointment Now <i data-lucide="arrow-down-right" style="vertical-align: middle;"></i></a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="book-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <p>Begin your wellness journey with us today</p>
+        </div>
+    </section>
+
+    <section class="book-section">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h2 class="cursive-heading">Schedule Your Visit</h2>
+                    <p>Fill out the form below and we'll confirm your appointment within 24 hours. For same-day bookings, please call us directly.</p>
+                    
+                    <div class="booking-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Easy Scheduling</h4>
+                                <p>Quick and simple booking process</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Flexible Times</h4>
+                                <p>Morning, afternoon, and evening slots</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Expert Therapists</h4>
+                                <p>Certified professionals for every service</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        <h4>Need Help?</h4>
+                        <p><i class="fas fa-phone"></i> Call us: +234 902 141 3480</p>
+                        <p><i class="fas fa-envelope"></i> Email: zinnswellness@gmail.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9AM-8PM | Sat-Sun: 10AM-6PM</p>
+                    </div>
+                </div>
+
+                <div class="booking-form-container">
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Select Service *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Choose a service...</option>
+                                <option value="massage">Massage - ₦30,000</option>
+                                <option value="facials">Facial Treatment - ₦25,000</option>
+                                <option value="body-wellness">Body Wellness - ₦25,000</option>
+                                <option value="reflexology">Foot Treatment - ₦20,000</option>
+                                <option value="nail-care">Nail Care - ₦10,000</option>
+                                <option value="special-package">Special Package - ₦60,000</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select time...</option>
+                                    <option value="09:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="therapist">Therapist Preference</label>
+                            <select id="therapist" name="therapist">
+                                <option value="">No preference</option>
+                                <option value="sarah">Precious Okenwa</option>
+                                <option value="maria">Maria Santos</option>
+                                <option value="david">David Kim</option>
+                                <option value="lisa">Lisa Chen</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Special Requests or Health Concerns</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Please let us know about any allergies, injuries, or special requirements..."></textarea>
+                        </div>
+<!-- 
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="firstVisit" id="firstVisit">
+                                <span>This is my first visit to Zinn's Wellness</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <span>Subscribe to our wellness newsletter for tips and special offers</span>
+                            </label>
+                        </div> -->
+
+                        <button type="submit" class="btn btn-primary btn-large">Confirm Booking</button>
+                        
+                        <p class="form-note">* Required fields. We'll send you a confirmation email within 24 hours.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-gallery">    
+        <img src="pics/african-girl-woman-couch-lady-beautician.jpg" alt="nail2"/>
+        <img src="pics/close-up-manicurist-using-nail-polish.jpg" alt="nail3"/>
+        <img src="pics/Cropped image of a young woman getting spa massage treatment and foot reflexology in a beauty salon_ _ Premium Photo.jpg" alt="nail4"/>
+        <img src="pics/attractive-african-woman-having-massage-relaxing-spa-salon-closed-eyes.jpg" alt="nail5"/>
+    </div>
+    <footer>
+        <div class="footer-overlay"></div>
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">Zinn's Wellness</div>
+                <p class="footer-description">
+                Where Beauty Meets Serenity
+                </p>
+                <div class="contact-info">
+                <p><span><i class="fa-solid fa-phone" style="color: #ddb41f;"></i></span> +234 902 141 3480</p>
+                <p><span><i class="fa-solid fa-envelope-circle-check" style="color: #ddb41f;"></i></span> zinnswellness@gmail.com</p>
+                </div>
+                <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook" style="color: #ddb41f;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" style="color: #ddb41f;"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok" style="color: #ddb41f;"></i></a>
+                </div>
+            </div>
+
+ 
+            <div class="footer-column">
+                <h4 class="footer-title">Quick Link</h4>
+                <div class="footer-links">
+                <a href="#">➜ About Us</a>
+                <a href="#">➜ Work Gallery</a>
+                <a href="#">➜ Our Services</a>
+                <a href="#">➜ Pricing Plans</a>
+                <a href="#">➜ Contact Us</a>
+                </div>
+            </div>
+
+            
+            <div class="footer-column">
+                <h4 class="footer-title">Our Services</h4>
+                <div class="footer-links">
+                <a href="#">➜ Hands & Feet</a>
+                <a href="#">➜ Facials Waxing</a>
+                <a href="#">➜ Body Waxing</a>
+                <a href="#">➜ Brows & Lashes</a>
+                <a href="#">➜ Body Massage</a>
+                <a href="#">➜ Nail Art</a>
+                </div>
+            </div>
+
+           
+            <div class="footer-column">
+                <h4 class="footer-title">Opening Hours</h4>
+                <div class="opening-hours">
+                <p>Monday: 9am – 8pm</p>
+                <p>Tuesday: 9am – 8pm</p>
+                <p>Wednesday: 9am – 8pm</p>
+                <p>Thursday: 9am – 8pm</p>
+                <p>Fri - Sat: 9am – 6pm</p>
+                <p>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 <span>Zinn's Wellness</span>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
