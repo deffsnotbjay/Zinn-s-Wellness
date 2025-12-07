@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zinn's Wellness - Natural Spa & Wellness Center</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pics/zinn.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -18,21 +19,26 @@
                 <div class="logo">
                     <h1>Zinn's Wellness</h1>
                 </div>
+                <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-menu">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="service.html">Services</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <a href="contact.html" class="btn-nav">Book An Appointment Now <i data-lucide="arrow-down-right" style="vertical-align: middle;"></i></a>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </div>
+        </div>
+
+        <div class="mobile-menu-overlay" id="mobileMenu">
+            <ul class="mobile-nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -44,142 +50,207 @@
         </div>
     </section>
 
-    <section class="book-section">
-        <div class="container">
-            <div class="booking-wrapper">
-                <div class="booking-info">
-                    <h2 class="cursive-heading">Schedule Your Visit</h2>
-                    <p>Fill out the form below and we'll confirm your appointment within 24 hours. For same-day bookings, please call us directly.</p>
-                    
-                    <div class="booking-benefits">
-                        <div class="benefit-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Easy Scheduling</h4>
-                                <p>Quick and simple booking process</p>
-                            </div>
-                        </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Flexible Times</h4>
-                                <p>Morning, afternoon, and evening slots</p>
-                            </div>
-                        </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Expert Therapists</h4>
-                                <p>Certified professionals for every service</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact-box">
-                        <h4>Need Help?</h4>
-                        <p><i class="fas fa-phone"></i> Call us: +234 902 141 3480</p>
-                        <p><i class="fas fa-envelope"></i> Email: zinnswellness@gmail.com</p>
-                        <p><i class="fas fa-clock"></i> Mon-Fri: 9AM-8PM | Sat-Sun: 10AM-6PM</p>
-                    </div>
-                </div>
-
-                <div class="booking-form-container">
-                    <form class="booking-form" id="bookingForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">First Name *</label>
-                                <input type="text" id="firstName" name="firstName" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Last Name *</label>
-                                <input type="text" id="lastName" name="lastName" required>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="service">Select Service *</label>
-                            <select id="service" name="service" required>
-                                <option value="">Choose a service...</option>
-                                <option value="massage">Massage - ₦30,000</option>
-                                <option value="facials">Facial Treatment - ₦25,000</option>
-                                <option value="body-wellness">Body Wellness - ₦25,000</option>
-                                <option value="reflexology">Foot Treatment - ₦20,000</option>
-                                <option value="nail-care">Nail Care - ₦10,000</option>
-                                <option value="special-package">Special Package - ₦60,000</option>
-                            </select>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="date">Preferred Date *</label>
-                                <input type="date" id="date" name="date" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="time">Preferred Time *</label>
-                                <select id="time" name="time" required>
-                                    <option value="">Select time...</option>
-                                    <option value="09:00">9:00 AM</option>
-                                    <option value="10:00">10:00 AM</option>
-                                    <option value="11:00">11:00 AM</option>
-                                    <option value="12:00">12:00 PM</option>
-                                    <option value="13:00">1:00 PM</option>
-                                    <option value="14:00">2:00 PM</option>
-                                    <option value="15:00">3:00 PM</option>
-                                    <option value="16:00">4:00 PM</option>
-                                    <option value="17:00">5:00 PM</option>
-                                    <option value="18:00">6:00 PM</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="therapist">Therapist Preference</label>
-                            <select id="therapist" name="therapist">
-                                <option value="">No preference</option>
-                                <option value="sarah">Precious Okenwa</option>
-                                <option value="maria">Maria Santos</option>
-                                <option value="david">David Kim</option>
-                                <option value="lisa">Lisa Chen</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Special Requests or Health Concerns</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Please let us know about any allergies, injuries, or special requirements..."></textarea>
-                        </div>
-<!-- 
-                        <div class="form-group checkbox-group">
-                            <label>
-                                <input type="checkbox" name="firstVisit" id="firstVisit">
-                                <span>This is my first visit to Zinn's Wellness</span>
-                            </label>
-                        </div>
-
-                        <div class="form-group checkbox-group">
-                            <label>
-                                <input type="checkbox" name="newsletter" id="newsletter">
-                                <span>Subscribe to our wellness newsletter for tips and special offers</span>
-                            </label>
-                        </div> -->
-
-                        <button type="submit" class="btn btn-primary btn-large">Confirm Booking</button>
-                        
-                        <p class="form-note">* Required fields. We'll send you a confirmation email within 24 hours.</p>
-                    </form>
-                </div>
+    <section class="booking-container">
+        <div class="progress-bar-wrapper">
+            <div class="progress-bar">
+                <div class="step active" id="step-1-indicator"><div class="step-num">1</div> <span>Services</span></div>
+                <div class="line"></div>
+                <div class="step" id="step-2-indicator"><div class="step-num">2</div> <span>Date</span></div>
+                <div class="line"></div>
+                <div class="step" id="step-3-indicator"><div class="step-num">3</div> <span>Details</span></div>
             </div>
         </div>
+        <div class="booking-form-area">
+            <form id="bookingForm">
+                
+                <div class="form-stage active" id="stage-1">
+                    <h2 style="color: var(--primary-green); margin-bottom: 20px;">Select Treatments</h2>
+                    <p style="margin-bottom: 30px; color: var(--text-light);">Select all the treatments you desire.</p>
+                    
+                    <div class="selection-grid">
+                        <label class="option-card">
+                            <input type="checkbox" name="services" value="Classic Massage" data-price="20000" data-duration="60">
+                            <div class="card-inner">
+                                <img src="pics/Image-BP7C23D-1024x682.jpg" alt="Massage" class="card-image">
+                                <div class="card-details">
+                                    <h3>Classic Massage <span class="check-circle"></span></h3>
+                                    <p>Relaxation & Circulation</p>
+                                    <span class="price-tag">₦20,000 • 60 min</span>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="checkbox" name="services" value="Deep Tissue" data-price="25000" data-duration="60">
+                            <div class="card-inner">
+                                <img src="pics/Image-8GQV9SH.jpg" alt="Deep Tissue" class="card-image">
+                                <div class="card-details">
+                                    <h3>Deep Tissue <span class="check-circle"></span></h3>
+                                    <p>Muscle Relief</p>
+                                    <span class="price-tag">₦25,000 • 60 min</span>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="checkbox" name="services" value="Luxury Facial" data-price="30000" data-duration="75">
+                            <div class="card-inner">
+                                <img src="pics/Elevate your skincare routine with a facial….jpeg" alt="Facial" class="card-image">
+                                <div class="card-details">
+                                    <h3>Luxury Facial <span class="check-circle"></span></h3>
+                                    <p>Deep Clean & Glow</p>
+                                    <span class="price-tag">₦30,000 • 75 min</span>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="checkbox" name="services" value="Skin Exfoliation" data-price="30000" data-duration="75">
+                            <div class="card-inner">
+                                <img src="pics/Image-9VZMNYN.jpg" alt="Manicure" class="card-image">
+                                <div class="card-details">
+                                    <h3>Skin Exfoliation <span class="check-circle"></span></h3>
+                                    <p>Full-body exfoliation</p>
+                                    <span class="price-tag">₦30,000 • 75 min</span>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="checkbox" name="services" value="Skin Polishing" data-price="30000" data-duration="45">
+                            <div class="card-inner">
+                                <img src="pics/Image-2WKTPEL-1024x682.jpg" alt="Manicure" class="card-image">
+                                <div class="card-details">
+                                    <h3>Skin Polishing <span class="check-circle"></span></h3>
+                                    <p>Full-body polishing</p>
+                                    <span class="price-tag">₦30,000 • 45 min</span>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="checkbox" name="services" value="Spa Manicure" data-price="15000" data-duration="45">
+                            <div class="card-inner">
+                                <img src="pics/farhad-ibrahimzade-Ng2uqWHLyHo-unsplash.jpg" alt="Manicure" class="card-image">
+                                <div class="card-details">
+                                    <h3>Spa Manicure <span class="check-circle"></span></h3>
+                                    <p>Shape, Cuticle, Polish</p>
+                                    <span class="price-tag">₦15,000 • 45 min</span>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="checkbox" name="services" value="Spa Pedicure" data-price="15000" data-duration="45">
+                            <div class="card-inner">
+                                <img src="pics/pedicure treatment.jpg" alt="Pedicure" class="card-image">
+                                <div class="card-details">
+                                    <h3>Spa Pedicure <span class="check-circle"></span></h3>
+                                    <p>Shape, Cuticle, Polish</p>
+                                    <span class="price-tag">₦15,000 • 45 min</span>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="checkbox" name="services" value="Body Scrub" data-price="30000" data-duration="60">
+                            <div class="card-inner">
+                                <img src="pics/Image-2HZ5YCA.jpg" alt="Scrub" class="card-image">
+                                <div class="card-details">
+                                    <h3>Body Scrub <span class="check-circle"></span></h3>
+                                    <p>Exfoliation & Smoothness</p>
+                                    <span class="price-tag">₦30,000 • 60 min</span>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="checkbox" name="services" value="Lash Extensions" data-price="12000" data-duration="120">
+                            <div class="card-inner">
+                                <img src="pics/hayley-kim-studios-sRSRuxkOuzI-unsplash.jpg" alt="Lashes" class="card-image">
+                                <div class="card-details">
+                                    <h3>Lash Extensions <span class="check-circle"></span></h3>
+                                    <p>Full Set Volume</p>
+                                    <span class="price-tag">₦12,000 • 120 min</span>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="checkbox" name="services" value="Microshading" data-price="15000" data-duration="45">
+                            <div class="card-inner">
+                                <img src="pics/download (1).jpeg" alt="Microshading" class="card-image">
+                                <div class="card-details">
+                                    <h3>Microshading<span class="check-circle"></span></h3>
+                                    <p></p>
+                                    <span class="price-tag">₦15,000 • 45 min</span>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div style="text-align: right;">
+                        <button type="button" class="btn-next" onclick="nextStage(2)">Next Step <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="form-stage" id="stage-2">
+                    <h2 style="color: var(--primary-green); margin-bottom: 20px;">Preferred Date & Time</h2>
+                    <input type="date" name="date" id="datePicker" class="date-input">
+                    
+                    <h4 style="margin-bottom: 10px;">Available Slots</h4>
+                    <div class="time-slots">
+                        <input type="radio" name="time" id="t1" value="09:00 AM" checked><label for="t1" class="time-label">09:00 AM</label>
+                        <input type="radio" name="time" id="t2" value="11:00 AM"><label for="t2" class="time-label">11:00 AM</label>
+                        <input type="radio" name="time" id="t3" value="01:00 PM"><label for="t3" class="time-label">01:00 PM</label>
+                        <input type="radio" name="time" id="t4" value="03:00 PM"><label for="t4" class="time-label">03:00 PM</label>
+                    </div>
+
+                    <div style="margin-top: 30px; display: flex; justify-content: space-between;">
+                        <button type="button" class="btn-back" onclick="nextStage(1)">Back</button>
+                        <button type="button" class="btn-next" onclick="nextStage(3)">Next Step <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="form-stage" id="stage-3">
+                    <h2 style="color: var(--primary-green); margin-bottom: 20px;">Your Details</h2>
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" placeholder="e.g. Jane Doe" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="jane@email.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Special Requests</label>
+                        <textarea name="message" rows="4" placeholder="Any allergies?"></textarea>
+                    </div>
+                    
+                    <input type="hidden" name="Total Price" id="input-total-price">
+                    <input type="hidden" name="Total Duration" id="input-total-duration">
+
+                    <div style="margin-top: 30px; display: flex; justify-content: space-between;">
+                        <button type="button" class="btn-back" onclick="nextStage(2)">Back</button>
+                        <button type="submit" class="btn-next btn-submit" id="submitBtn">Confirm Booking</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="summary-wrapper">
+            <div class="summary-bg"></div>
+            <div class="summary-card">
+                <h3>Your Visit</h3>
+                <ul class="selected-list" id="selected-list">
+                    <li class="selected-item" style="opacity: 0.6; font-style: italic;">No treatments selected</li>
+                </ul>
+                <div class="summary-row"><span>Est. Duration</span><span id="sum-duration">0 min</span></div>
+                <div class="summary-row"><span>Date</span><span id="sum-date">Select Date</span></div>
+                <div class="summary-row"><span>Time</span><span id="sum-time">09:00 AM</span></div>
+                <div class="total-row"><span>Total</span><span id="sum-price">₦0</span></div>
+            </div>
+        </div>
+
     </section>
 
     <div class="footer-gallery">    
@@ -250,5 +321,159 @@
         </div>
     </footer>
     <script src="script.js"></script>
+
+    <script>
+        const FORMSPARK_ID = 'YOUR_FORMSPARK_ID_HERE'; 
+        // ---------------------------------------------------------
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const dateInput = document.getElementById('datePicker');
+            const timeRadios = document.getElementsByName('time');
+            const serviceCheckboxes = document.getElementsByName('services');
+            
+            // Summary Elements
+            const selectedList = document.getElementById('selected-list');
+            const sumDuration = document.getElementById('sum-duration');
+            const sumPrice = document.getElementById('sum-price');
+            const sumDate = document.getElementById('sum-date');
+            const sumTime = document.getElementById('sum-time');
+            
+            // Hidden Form Inputs (for email data)
+            const inputTotalPrice = document.getElementById('input-total-price');
+            const inputTotalDuration = document.getElementById('input-total-duration');
+
+            // Default Date
+            dateInput.valueAsDate = new Date();
+            updateDateDisplay();
+
+            // Handle Service Selections
+            serviceCheckboxes.forEach(box => {
+                box.addEventListener('change', updateSummary);
+            });
+
+            function updateSummary() {
+                let totalPrice = 0;
+                let totalMins = 0;
+                let html = '';
+
+                const checkedBoxes = document.querySelectorAll('input[name="services"]:checked');
+
+                if (checkedBoxes.length === 0) {
+                    html = '<li class="selected-item" style="opacity: 0.6; font-style: italic;">No treatments selected</li>';
+                } else {
+                    checkedBoxes.forEach(box => {
+                        const price = parseInt(box.getAttribute('data-price'));
+                        const duration = parseInt(box.getAttribute('data-duration'));
+                        totalPrice += price;
+                        totalMins += duration;
+                        html += `
+                        <li class="selected-item">
+                            <span>${box.value}</span>
+                            <span>₦${price.toLocaleString()}</span>
+                        </li>`;
+                    });
+                }
+
+                // Update Visual Summary
+                selectedList.innerHTML = html;
+                sumPrice.textContent = '₦' + totalPrice.toLocaleString();
+                sumDuration.textContent = totalMins + ' min';
+
+                // Update Hidden Inputs (This is what sends to email)
+                inputTotalPrice.value = '₦' + totalPrice.toLocaleString();
+                inputTotalDuration.value = totalMins + ' min';
+            }
+
+            // Date & Time Updates
+            dateInput.addEventListener('change', updateDateDisplay);
+            timeRadios.forEach(radio => {
+                radio.addEventListener('change', () => {
+                    sumTime.textContent = radio.value;
+                });
+            });
+
+            function updateDateDisplay() {
+                if(dateInput.value) {
+                    const d = new Date(dateInput.value);
+                    const options = { weekday: 'short', month: 'short', day: 'numeric' };
+                    sumDate.textContent = d.toLocaleDateString('en-US', options);
+                }
+            }
+        });
+
+        // Navigation Logic
+        function nextStage(n) {
+            window.scrollTo({ top: 100, behavior: 'smooth' });
+            document.querySelectorAll('.form-stage').forEach(el => el.classList.remove('active'));
+            document.getElementById(`stage-${n}`).classList.add('active');
+            document.querySelectorAll('.step').forEach((step, index) => {
+                if(index + 1 <= n) step.classList.add('active');
+                else step.classList.remove('active');
+            });
+        }
+
+        // ---------------------------------------------------------
+        // FORMSPARK SUBMISSION LOGIC
+        // ---------------------------------------------------------
+        const form = document.getElementById('bookingForm');
+        const submitBtn = document.getElementById('submitBtn');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault(); // Stop page refresh
+
+            // Check if user has ID
+            if(FORMSPARK_ID === 'YOUR_FORMSPARK_ID_HERE') {
+                alert("Please add your Formspark ID in the code!");
+                return;
+            }
+
+            // UI Loading State
+            const originalText = submitBtn.innerText;
+            submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Processing...';
+            submitBtn.disabled = true;
+
+            // Gather Data
+            const formData = new FormData(this);
+            // Convert to simple JSON object for cleaner email
+            const dataObj = {};
+            formData.forEach((value, key) => {
+                // Handle multiple checkboxes with same name
+                if (dataObj[key]) {
+                    if (!Array.isArray(dataObj[key])) {
+                        dataObj[key] = [dataObj[key]];
+                    }
+                    dataObj[key].push(value);
+                } else {
+                    dataObj[key] = value;
+                }
+            });
+
+            try {
+                const response = await fetch(`https://submit-form.com/${FORMSPARK_ID}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(dataObj)
+                });
+
+                if (response.ok) {
+                    // Success
+                    alert("Booking Request Sent! We will contact you shortly to confirm.");
+                    window.location.href = "index.html"; // Redirect to home
+                } else {
+                    alert("Something went wrong. Please try again.");
+                    submitBtn.innerText = originalText;
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                console.error(error);
+                alert("Network error. Please check your connection.");
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+    </script>
 </body>
 </html>
